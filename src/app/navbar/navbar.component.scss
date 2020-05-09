@@ -152,7 +152,7 @@ header {
     font-size: 2rem;
     transition: ease-in-out 0.3s;
     .logo-img {
-      background: url("../../assets/logo2.png") center;
+      // background: url("../../assets/logo2.png") center;
       background-size: cover;
       width: 1.5em;
       height: 1.3em;
@@ -221,7 +221,7 @@ header {
           color: $fourthColor;
         }
         .logo-img {
-          background: url("../../assets/logo1.png") center;
+          // background: url("../../assets/logo1.png") center;
           background-size: cover;
         }
       }
@@ -304,7 +304,7 @@ header {
         color: $fourthColor;
       }
       .logo-img {
-        background: url("../../assets/logo1.png") center;
+        // background: url("../../assets/logo1.png") center;
         background-size: cover;
       }
     }
