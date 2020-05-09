@@ -2,6 +2,7 @@
 
 header {
   background-color: $firstColor;
+  min-height: 80vh;
   .header-wrapper {
     width: $containerWidth;
     margin: 0 auto;
