@@ -65,4 +65,7 @@ export class NavbarComponent implements OnInit {
   hideNotifications(){
     (<HTMLElement>document.querySelector('.notifications-dropdown')).style.transform = "scale(0)";
   }
+  showNotificationsInResponsive(){
+    (<HTMLElement>document.querySelector('.notifications-respnsive-container')).style.display = 'block';
+  }
 }

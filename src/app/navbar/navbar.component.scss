@@ -64,7 +64,7 @@ header {
         height: 100%;
       }
     }
-    .nav-dropdown{
+    .nav-dropdown {
       position: absolute;
       top: 100%;
       right: -15px;
@@ -111,34 +111,33 @@ header {
         }
       }
     }
-      .notifications-dropdown {
-        .notifications-dropdown-wrapper{
-          width: 20rem;
-          max-height: 30rem;
-          overflow-y: auto;
-          p {
-            border-bottom: 1px solid #2222;
-            &:last-of-type {
-              border: none;
-            }
-          }
-          &::after {
-            content: "";
-            position: absolute;
-            top: -5px;
-            right: 10px;
-            border: 7px solid $secondColor;
-            transform: translateX(-50%) rotate(135deg);
+    .notifications-dropdown {
+      .notifications-dropdown-wrapper {
+        width: 23rem;
+        max-height: 25rem;
+        overflow-y: auto;
+        p {
+          border-bottom: 1px solid #2222;
+          &:last-of-type {
+            border: none;
           }
         }
+        &::after {
+          content: "";
+          position: absolute;
+          top: -5px;
+          right: 10px;
+          border: 7px solid $secondColor;
+          transform: translateX(-50%) rotate(135deg);
+        }
       }
+    }
   }
   .logout-btn {
     border: none;
     background-color: transparent;
     font-weight: 500;
     border-top: 1px solid #2222;
-    text-align: left;
     &:hover {
       background-color: $grayColor;
     }
@@ -149,14 +148,9 @@ header {
   }
   .logo {
     z-index: 100;
-    font-size: 2rem;
+    font-size: 1.9rem;
     transition: ease-in-out 0.3s;
-    .logo-img {
-      // background: url("../../assets/logo2.png") center;
-      background-size: cover;
-      width: 1.5em;
-      height: 1.3em;
-    }
+
     p:nth-of-type(1) {
       color: $secondColor;
     }
@@ -171,68 +165,77 @@ header {
     padding: 2em 0;
     background-color: #fff;
     position: absolute;
-    right: 5%;
+    right: 0px;
     top: 0;
     z-index: 1000;
-    width: 90%;
-    min-height: 70vh;
+    width: 100%;
+    height: 100vh;
     opacity: 0;
     transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transform: scale(0);
     font-size: 1rem;
-    &.act {
-      opacity: 1;
-      transform: scale(1);
-      ul li {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-    li {
-      list-style: none;
-      font-weight: 500;
-      font-size: 1.2rem;
-      padding: 20px 0;
-      text-align: center;
-      transition: all 400ms 510ms;
-      opacity: 0;
-      &:nth-child(odd) {
-        transform: translateX(30%);
-      }
-      &:nth-child(even) {
-        transform: translateX(-30%);
-      }
-    }
-    .notifications-btn {
-      border: none;
-      background-color: transparent;
-      color: $firstColor;
-      font-weight: 500;
-      font-size: 1.2rem;
-    }
-    a {
-      color: $firstColor;
-      &.logo {
-        font-size: 1.1rem;
-        p:nth-of-type(1) {
-          color: $firstColor;
-        }
-        p:nth-of-type(2) {
-          color: $fourthColor;
-        }
-        .logo-img {
-          // background: url("../../assets/logo1.png") center;
-          background-size: cover;
-        }
-      }
-    }
 
-    .logIn-btn {
-      color: $firstColor;
-    }
-    .signUp-btn {
-      color: $firstColor;
-    }
+      &.act {
+        opacity: 1;
+        transform: scale(1);
+        ul li {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      li {
+        list-style: none;
+        font-weight: 500;
+        font-size: 1.2rem;
+        padding: 20px 0;
+        text-align: center;
+        transition: all 400ms 510ms;
+        opacity: 0;
+        &:nth-child(odd) {
+          transform: translateX(30%);
+        }
+        &:nth-child(even) {
+          transform: translateX(-30%);
+        }
+      }
+      .notifications-btn {
+        border: none;
+        background-color: transparent;
+        color: $firstColor;
+        font-weight: 500;
+        font-size: 1.2rem;
+      }
+      a {
+        color: $firstColor;
+        &.logo {
+          font-size: 1.1rem;
+          p:nth-of-type(1) {
+            color: $firstColor;
+          }
+          p:nth-of-type(2) {
+            color: $fourthColor;
+          }
+
+        }
+      }
+
+      .logIn-btn {
+        color: $firstColor;
+      }
+      .signUp-btn {
+        color: $firstColor;
+      }
+      .notifications-respnsive-container {
+        position: absolute;
+        top: 0;
+        display: none;
+        background-color: white;
+        p{
+          border-top: 1px solid #2222;
+          
+        }
+      }
+    
   }
   .menuBtn {
     height: 30px;
@@ -293,20 +296,17 @@ header {
   background-color: $secondColor;
   box-shadow: 0px 0px 3px 0px #a1a5ad;
   font-size: 0.9rem;
-  z-index:1000;
+  z-index: 1000;
   .header-wrapper {
     .logo {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       p:nth-of-type(1) {
         color: $firstColor;
       }
       p:nth-of-type(2) {
         color: $fourthColor;
       }
-      .logo-img {
-        // background: url("../../assets/logo1.png") center;
-        background-size: cover;
-      }
+
     }
     background-color: white;
 
@@ -334,7 +334,7 @@ a.active {
   color: $fourthColor !important;
   &::after {
     content: "";
-    width: 30%;
+    width: 3em;
     height: 0;
     display: block;
     margin: 0 auto;
