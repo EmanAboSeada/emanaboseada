@@ -9,7 +9,7 @@
             *ngFor="let chat of chatList | filter:filterMessagees:'userName'" (click)="clickChatListItem()">
             <figure class="col mr-2">
                 <img [src]="chat.userImg" alt="" *ngIf="chat.userImg">
-                <img src="./../../../assets/default_user.png" alt="" *ngIf="!chat.userImg">
+                <img src="https://i.postimg.cc/kGrrctNV/default-user.jpg" alt="" *ngIf="!chat.userImg">
             </figure>
             <div class="col mt-2">
                 <div class="w-100 d-flex justify-content-between">

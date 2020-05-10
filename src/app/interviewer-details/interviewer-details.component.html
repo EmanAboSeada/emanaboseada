@@ -2,7 +2,7 @@
     <div class=" d-flex flex-column align-content-center mr-2">
         <figure class=" user-image">
             <img [src]="user.image" alt="" *ngIf="user.image">
-            <img src="./../../assets/default_user.png" alt="" *ngIf="!user.image">
+            <img src="https://i.postimg.cc/kGrrctNV/default-user.jpg" alt="" *ngIf="!user.image">
 
         </figure>
         <a [routerLink]="['/user-profile', user.id]">Show More</a>
@@ -12,8 +12,8 @@
             <div class="row align-items-center ">
                 <h5 class=" username">{{user.name}}</h5>
                 <figure class="verified-img">
-                    <img  src="../../assets/verified2.png" *ngIf="user.verified">
-                    <img  src="../../assets/verified1.png" *ngIf="!user.verified">
+                    <img  src="https://i.postimg.cc/k4R3KyS3/verified2.png" *ngIf="user.verified">
+                    <img  src="https://i.postimg.cc/htKB6xkT/verified1.png" *ngIf="!user.verified">
                 </figure>
                 <!-- <p class="ml-auto">{{user.rate}}</p> -->
             </div>

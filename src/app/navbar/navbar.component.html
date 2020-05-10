@@ -30,14 +30,14 @@
                     <fa-icon [icon]="messageIcon"></fa-icon><span>9</span>
                 </button>
                 <div class="position-relative">
-                    <figure class="user-img" (click)="showUserDropdown()"><img src="./../../assets/default_user.png"
+                    <figure class="user-img" (click)="showUserDropdown()"><img src="https://i.postimg.cc/kGrrctNV/default-user.jpg"
                             alt="">
                     </figure>
                     <div class="nav-dropdown profile-dropdown p-2" tabindex="0" (mousedown)="eventPreventDefault($event)"
                         (blur)="hideUserDropdown()">
                         <a [routerLink]="['/profile', 2]" routerLinkActive="" class="profile d-flex py-2 px-3 w-100"
                             (mouseup)="hideUserDropdown()">
-                            <figure class=" mr-3"><img src="./../../assets/default_user.png" alt=""></figure>
+                            <figure class=" mr-3"><img src="https://i.postimg.cc/kGrrctNV/default-user.jpg" alt=""></figure>
                             <div>
                                 <p>Eman Abo Seada</p>
                                 <small>View Profile</small>
@@ -61,8 +61,8 @@
                 <li>
                     <a routerLink="/home" class="logo d-flex align-items-baseline justify-content-center "
                     (mouseup)="togglebtn()">
-                        <p>oq</p>
-                        <p>Interview</p>
+                        <p>Lo</p>
+                        <p>Go</p>
                     </a>
                 </li>
                 <li *ngIf="isAuthenticated">

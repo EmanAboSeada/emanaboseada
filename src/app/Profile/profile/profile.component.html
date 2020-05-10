@@ -10,7 +10,7 @@
                         [(visible)]="displayUserImageDialog" [transitionOptions]="'.2s'">
                         <form action="" [formGroup]="editUserImageForm">
                             <image-cropper [imageChangedEvent]="imageChangedEvent"
-                                imageBase64="./../../../assets/default_user.png" format="png"
+                                imageBase64="https://i.postimg.cc/kGrrctNV/default-user.jpg" format="png"
                                 (imageCropped)="imageCropped($event)" roundCropper="true"></image-cropper>
                             <div class="row justify-content-around mt-3">
                                 <div class="col-5  file-input-container">
@@ -24,7 +24,7 @@
                     </p-dialog>
                     <figure class="user-image-dest">
                         <img [src]="user.image" alt="" *ngIf="user.image">
-                        <img src="./../../../assets/default_user.png" alt="" *ngIf="!user.image">
+                        <img src="https://i.postimg.cc/kGrrctNV/default-user.jpg" alt="" *ngIf="!user.image">
                     </figure>
                 </div>
                 <div class="pl-3 col">
